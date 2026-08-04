@@ -1,112 +1,234 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#07110f" />
+    <meta
+      name="description"
+      content="Mohana Krishna is a developer building agentic AI, computer vision, and useful web experiences."
+    />
+    <meta property="og:title" content="Mohana Krishna — Developer & AI Builder" />
+    <meta
+      property="og:description"
+      content="Selected work across agentic AI, computer vision, and human-centered software."
+    />
+    <meta property="og:type" content="website" />
+    <title>Mohana Krishna — Developer & AI Builder</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
 
-  <body class="bg-slate-950 text-white">
-    <header class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur border-b border-slate-800">
-      <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <h1 class="text-2xl font-bold text-cyan-400">MyPortfolio</h1>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
 
-        <ul class="flex gap-6 text-sm md:text-base">
-          <li><a href="#hero" class="hover:text-cyan-400">Home</a></li>
-          <li><a href="#about" class="hover:text-cyan-400">About</a></li>
-          <li><a href="#projects" class="hover:text-cyan-400">Projects</a></li>
-          <li><a href="#contact" class="hover:text-cyan-400">Contact</a></li>
-        </ul>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Mohana Krishna, home">
+        <span class="brand-mark">MK</span>
+        <span class="brand-label">Mohana Krishna</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#toolkit">Toolkit</a>
+        <a class="nav-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
 
-    <section id="hero" class="min-h-screen flex items-center justify-center px-6">
-      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-            Hi, I'm <span class="text-cyan-400">Your Name</span>
+    <main id="main">
+      <section id="home" class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span> Available for ambitious builds</p>
+          <h1 id="hero-title">
+            I turn complex ideas into
+            <span class="accent-text">software people can use.</span>
           </h1>
-
-          <p class="text-slate-300 text-lg mb-8">
-            Aspiring Web Developer passionate about building beautiful and responsive websites.
+          <p class="hero-lede">
+            Developer and AI builder working across intelligent agents, computer vision,
+            and expressive web experiences—from Vellore, India.
           </p>
-
-          <div class="flex gap-4">
-            <a href="#projects" class="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold">
-              View Projects
-            </a>
-
-            <a href="#contact" class="border border-cyan-400 text-cyan-400 px-6 py-3 rounded-xl">
-              Contact Me
-            </a>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="mailto:codexmohan@gmail.com">codexmohan@gmail.com <span aria-hidden="true">↗</span></a>
           </div>
         </div>
 
-        <div class="flex justify-center">
-          <img
-            src="assets/profile-placeholder.jpg"
-            alt="Profile"
-            class="w-72 h-72 object-cover rounded-full border-4 border-cyan-400 shadow-2xl"
-          />
+        <div class="hero-visual reveal" aria-label="Profile portrait of Mohana Krishna">
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="portrait-frame">
+            <div class="portrait-backdrop"></div>
+            <img
+              src="https://avatars.githubusercontent.com/u/176037692?v=4"
+              alt="Mohana Krishna"
+              width="420"
+              height="420"
+            />
+            <span class="portrait-tag tag-top">AI × WEB</span>
+            <span class="portrait-tag tag-bottom">13.08° N · 79.16° E</span>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <section id="about" class="py-24 px-6 bg-slate-900">
-      <div class="max-w-5xl mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-8 text-cyan-400">About Me</h2>
+        <div class="hero-proof reveal" aria-label="Highlights">
+          <div><strong>35+</strong><span>public builds</span></div>
+          <div><strong>97%</strong><span>plant CV accuracy</span></div>
+          <div><strong>∞</strong><span>curiosity loop</span></div>
+        </div>
+      </section>
 
-        <p class="text-slate-300 text-lg leading-8 max-w-3xl mx-auto">
-          I enjoy creating modern websites using HTML, CSS, and Tailwind CSS.
-        </p>
-      </div>
-    </section>
+      <section id="about" class="about section-shell section-pad" aria-labelledby="about-title">
+        <div class="section-heading reveal">
+          <p class="section-index">01 / ABOUT</p>
+          <h2 id="about-title">Curious by default.<br />Deliberate by design.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="lead-copy">
+              I’m Mohana—a developer drawn to hard problems at the intersection of
+              <em>intelligence, interfaces, and impact.</em>
+            </p>
+            <p>
+              My projects range from minimal agent libraries to real-time traffic intelligence
+              and offline AI tutors. I like taking an idea from first principles to a working,
+              polished product, with equal care for the system underneath and the person using it.
+            </p>
+            <p>
+              Right now, I’m sharpening my frontend craft through the Finlatics web development
+              internship while continuing to experiment with AI systems.
+            </p>
+          </div>
+          <aside class="principles-card reveal" aria-label="How I work">
+            <p class="mono-label">HOW I WORK</p>
+            <ol>
+              <li><span>01</span> Start with the real problem</li>
+              <li><span>02</span> Build the smallest honest solution</li>
+              <li><span>03</span> Sweat the interaction details</li>
+              <li><span>04</span> Ship, measure, learn</li>
+            </ol>
+          </aside>
+        </div>
+      </section>
 
-    <section id="projects" class="py-24 px-6">
-      <div class="max-w-6xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-14 text-cyan-400">
-          Projects
-        </h2>
+      <section id="work" class="work section-pad" aria-labelledby="work-title">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <p class="section-index">02 / SELECTED WORK</p>
+            <h2 id="work-title">Systems with a point of view.</h2>
+          </div>
 
-        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
-            <img src="assets/project-1.png" alt="Project" class="w-full h-52 object-cover" />
+          <div class="project-list">
+            <article class="project project-featured reveal">
+              <div class="project-visual visual-spectra" aria-hidden="true">
+                <div class="terminal-card">
+                  <div class="terminal-bar"><i></i><i></i><i></i><span>spectra.ts</span></div>
+                  <code><b>const</b> agent = <b>new</b> Spectra({<br />&nbsp;&nbsp;model: <em>"fast"</em>,<br />&nbsp;&nbsp;tools: [search, code]<br />});<br /><br /><span>await</span> agent.run(task);</code>
+                </div>
+                <div class="pulse-ring"></div>
+              </div>
+              <div class="project-content">
+                <div class="project-meta"><span>AGENTIC AI</span><span>2026</span></div>
+                <h3>Spectra</h3>
+                <p>A fast, minimal agent library for TypeScript and Rust—designed to keep powerful AI orchestration understandable.</p>
+                <ul class="project-stack"><li>TypeScript</li><li>Rust</li><li>AI Agents</li></ul>
+                <a class="project-link" href="https://github.com/codex-mohan/spectra" target="_blank" rel="noreferrer" aria-label="View Spectra on GitHub">View repository <span>↗</span></a>
+              </div>
+            </article>
 
-            <div class="p-6">
-              <h3 class="text-2xl font-semibold mb-3">Project One</h3>
+            <article class="project reveal">
+              <div class="project-visual visual-parksense" aria-hidden="true">
+                <div class="street-map"><i></i><i></i><i></i><span class="map-pin pin-one"></span><span class="map-pin pin-two"></span><span class="map-pin pin-three"></span></div>
+                <p>CONGESTION<br /><strong>−18.4%</strong></p>
+              </div>
+              <div class="project-content">
+                <div class="project-meta"><span>URBAN INTELLIGENCE</span><span>2026</span></div>
+                <h3>ParkSense</h3>
+                <p>AI parking intelligence that detects illegal parking hotspots and quantifies congestion impact for Bengaluru Traffic Police.</p>
+                <ul class="project-stack"><li>TypeScript</li><li>Computer Vision</li><li>Geospatial</li></ul>
+                <a class="project-link" href="https://github.com/codex-mohan/parksense" target="_blank" rel="noreferrer" aria-label="View ParkSense on GitHub">View repository <span>↗</span></a>
+              </div>
+            </article>
 
-              <p class="text-slate-400 mb-4">
-                A responsive website built using HTML, CSS, and Tailwind.
-              </p>
+            <article class="project reveal">
+              <div class="project-visual visual-talent" aria-hidden="true">
+                <div class="candidate-stack"><span>01 <b>96.2</b></span><span>02 <b>91.8</b></span><span>03 <b>88.4</b></span><span>04 <b>84.1</b></span></div>
+              </div>
+              <div class="project-content">
+                <div class="project-meta"><span>RESPONSIBLE AI</span><span>2026</span></div>
+                <h3>TalentLens</h3>
+                <p>An AI candidate-ranking system built for the INDIA RUNS hackathon, turning dense application data into clear hiring signals.</p>
+                <ul class="project-stack"><li>Python</li><li>NLP</li><li>Ranking Systems</li></ul>
+                <a class="project-link" href="https://github.com/codex-mohan/TalentLens" target="_blank" rel="noreferrer" aria-label="View TalentLens on GitHub">View repository <span>↗</span></a>
+              </div>
+            </article>
 
-              <a href="#" class="text-cyan-400 hover:underline">
-                View Project
-              </a>
+            <article class="project reveal">
+              <div class="project-visual visual-vizora" aria-hidden="true">
+                <div class="camera-frame"><span class="scan-line"></span><b>TRACKING · 03</b><i class="target target-a"></i><i class="target target-b"></i></div>
+              </div>
+              <div class="project-content">
+                <div class="project-meta"><span>COMPUTER VISION</span><span>2026</span></div>
+                <h3>Vizora</h3>
+                <p>A real-time traffic violation detection and review platform with automated evidence generation and deployment-ready workflows.</p>
+                <ul class="project-stack"><li>Computer Vision</li><li>Real-time</li><li>Web</li></ul>
+                <a class="project-link" href="https://github.com/codex-mohan/Vizora" target="_blank" rel="noreferrer" aria-label="View Vizora on GitHub">View repository <span>↗</span></a>
+              </div>
+            </article>
+          </div>
+
+          <a class="all-work reveal" href="https://github.com/codex-mohan?tab=repositories" target="_blank" rel="noreferrer">
+            <span>See all experiments on GitHub</span><span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="toolkit" class="toolkit section-shell section-pad" aria-labelledby="toolkit-title">
+        <div class="section-heading reveal">
+          <p class="section-index">03 / TOOLKIT</p>
+          <h2 id="toolkit-title">From model to interface.</h2>
+        </div>
+        <div class="tool-grid">
+          <div class="tool-card reveal"><span>01</span><h3>Frontend</h3><p>TypeScript · React · HTML · CSS · Responsive UI</p></div>
+          <div class="tool-card reveal"><span>02</span><h3>Intelligence</h3><p>Python · LLM agents · NLP · Computer vision · PyTorch</p></div>
+          <div class="tool-card reveal"><span>03</span><h3>Backend</h3><p>APIs · Data pipelines · SQL · Realtime systems · Rust</p></div>
+          <div class="tool-card reveal"><span>04</span><h3>Practice</h3><p>Prototyping · Systems thinking · Git · Research · Shipping</p></div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section-pad" aria-labelledby="contact-title">
+        <div class="contact-inner section-shell reveal">
+          <p class="section-index">04 / CONTACT</p>
+          <h2 id="contact-title">Have a difficult idea?<br /><span>Let's make it real.</span></h2>
+          <p>I’m open to internships, collaborations, and conversations about useful technology.</p>
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:codexmohan@gmail.com">Start a conversation <span aria-hidden="true">↗</span></a>
+            <div class="social-links">
+              <a href="https://github.com/codex-mohan" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <a href="https://x.com/codexmohan9" target="_blank" rel="noreferrer">X / Twitter ↗</a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <section id="contact" class="py-24 px-6 bg-slate-900">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-12 text-cyan-400">
-          Contact Me
-        </h2>
-
-        <form class="space-y-6">
-          <input type="text" placeholder="Name" class="w-full px-4 py-3 rounded-xl bg-slate-800" />
-          <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded-xl bg-slate-800" />
-          <textarea rows="5" placeholder="Message" class="w-full px-4 py-3 rounded-xl bg-slate-800"></textarea>
-
-          <button type="submit" class="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold">
-            Send Message
-          </button>
-        </form>
-      </div>
-    </section>
+    <footer class="site-footer section-shell">
+      <p>Designed &amp; built by Mohana Krishna.</p>
+      <p class="mono-label">© <span data-year></span> · VELLORE, INDIA</p>
+      <a href="#home">Back to top ↑</a>
+    </footer>
   </body>
 </html>
