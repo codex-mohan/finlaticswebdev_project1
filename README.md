@@ -14,5 +14,6 @@ Then open the local URL printed by `serve`.
 ## Built with
 
 - Semantic HTML
-- Modern CSS with responsive layouts and reduced-motion support
-- Vanilla JavaScript for navigation and reveal interactions
+- Tailwind CSS utilities for responsive layout and custom CSS for the visual system
+- Vanilla JavaScript for mobile navigation, reveal interactions, and the contact form
+- Mobile-first breakpoints with reduced-motion accessibility support
